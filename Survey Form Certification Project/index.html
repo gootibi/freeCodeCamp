@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Questions about you!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Questions about you!</h1>
+        <p id="description">Thank you for taking the time to complete the form!</p>
+        <form id="survey-form" action="http://" method="post">
+            <fieldset><legend class="legend">Personal data</legend>
+                <label id="name-label" for="name">Name:
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required ></label>
+                <label id="email-label" for="email">Email:
+                    <input type="email" name="email" id="email" placeholder="Enter your Email..." required /></label>
+                <label id="number-label" for="number">Age:
+                    <input type="number" name="number" id="number" min="16" max="120" placeholder="Age" required /></label>
+            </fieldset>        
+            <fieldset><legend class="legend">Gender</legend>        
+                    
+                    <label for="gender-label"><input type="radio" name="gender-label" id="gender-label" value="male" class="inline">Male</label>
+                    <label for="gender-label"><input type="radio" name="gender-label" id="gender-label" value="female" class="inline">Female</label>
+            </fieldset>
+            <fieldset><legend class="legend">Interests:</legend>
+                <label for="interest-label"></label>
+                     
+                    <label><input value="0" id="Programming" type="checkbox" class="inline"> Programming</label>
+                    
+                    <label><input value="1" id="Music" type="checkbox" class="inline"> Music</label>
+                    
+                    <label><input value="2" id="Reading" type="checkbox" class="inline"> Reading</label>
+                    
+                    <label><input value="3" id="Cooking" type="checkbox" class="inline"> Cooking</label>
+                    
+                    <label><input value="4" id="Traveling" type="checkbox" class="inline"> Traveling</label>
+                    
+                    <label><input value="5" id="Sports" type="checkbox" class="inline"> Sports</label>
+                    
+                    <label><input value="6" id="Movies" type="checkbox" class="inline"> Movies</label>
+                    
+                    <label><input value="7" id="Other" type="checkbox" class="inline"> Other</label>
+            </fieldset>
+            <fieldset calss="other"><legend class="legend">Other data</legend>
+                <label for="dropdown">What is your favorite programming language?
+                <select id="dropdown" name="dropdown" class="select" required />
+                    <option value="">(select one)</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Other">Other...</option>
+                </select>
+                </label>
+                <label>Other information about yourself!</label>
+                <textarea name="other-info" id="other-info" cols="30" rows="10" placeholder="Please write about yourself!"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </body>
+</html>
